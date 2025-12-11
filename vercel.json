@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.thecompiled.tech"
+        }
+      ],
+      "destination": "https://thecompiled.tech/:path*",
+      "permanent": true
+    }
+  ]
+}
