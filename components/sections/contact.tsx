@@ -111,7 +111,7 @@ export function ContactSection() {
 
     setIsSubmitting(true)
 
-    const whatsappNumber = "911111111111" // +91 1111111111 without + and spaces
+    const whatsappNumber = "916388365386" // +91 6388365386 without + and spaces
     const message = `
 *New Project Inquiry from The Compiled*
 
@@ -323,12 +323,12 @@ ${formData.message}
                   <div>
                     <p className="text-[#71717A] text-sm">WhatsApp us at</p>
                     <a
-                      href="https://wa.me/919026953658"
+                      href="https://wa.me/916388365386"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-white hover:text-[#25D366] transition-colors"
                     >
-                      +91 1111111111
+                      +91 6388365386
                     </a>
                   </div>
                 </div>
