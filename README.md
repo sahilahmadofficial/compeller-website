@@ -32,7 +32,7 @@ A futuristic, cyberpunk-inspired tech consultancy website built with Next.js 15,
 
 ## Getting Started
 
-\`\`\`bash
+```bash
 # Install dependencies
 npm install
 
@@ -44,11 +44,11 @@ npm run build
 
 # Start production server
 npm start
-\`\`\`
+```
 
 ## Project Structure
 
-\`\`\`
+```
 ├── app/
 │   ├── globals.css       # Theme and custom animations
 │   ├── layout.tsx        # Root layout with fonts
@@ -68,7 +68,7 @@ npm start
 │       └── footer.tsx
 └── public/
     └── logo.png
-\`\`\`
+```
 
 ## Easter Eggs
 
