@@ -1,0 +1,464 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* New unique color theme - warm coral + cool mint/teal on rich dark slate */
+:root {
+  /* Primary Colors - Warm Coral/Amber spectrum */
+  --coral: #ff6b6b;
+  --amber: #ffab4c;
+  --sunset: #ff8e53;
+
+  /* Secondary Colors - Cool Mint/Teal spectrum */
+  --mint: #4ecdc4;
+  --teal: #2dd4bf;
+  --emerald: #10b981;
+
+  /* Background Colors - Rich dark slate */
+  --void: #0a0a0f;
+  --slate-deep: #12121a;
+  --slate-mid: #1a1a24;
+
+  /* Text Colors */
+  --text-primary: #fafafa;
+  --text-secondary: #e4e4e7;
+  --text-muted: #71717a;
+
+  /* Glassmorphism */
+  --glass-bg: rgba(26, 26, 36, 0.6);
+  --glass-border: rgba(113, 113, 122, 0.15);
+
+  /* Theme Tokens */
+  --background: #0a0a0f;
+  --foreground: #fafafa;
+  --card: rgba(26, 26, 36, 0.6);
+  --card-foreground: #fafafa;
+  --popover: #1a1a24;
+  --popover-foreground: #fafafa;
+  --primary: #ff6b6b;
+  --primary-foreground: #fafafa;
+  --secondary: #4ecdc4;
+  --secondary-foreground: #0a0a0f;
+  --muted: #27272a;
+  --muted-foreground: #71717a;
+  --accent: #ffab4c;
+  --accent-foreground: #0a0a0f;
+  --destructive: #ef4444;
+  --destructive-foreground: #fafafa;
+  --border: rgba(113, 113, 122, 0.2);
+  --input: rgba(26, 26, 36, 0.8);
+  --ring: #ff6b6b;
+  --radius: 0.75rem;
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@theme inline {
+  --font-sans: "Inter", "Inter Fallback", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    /* New gradient background with rich slate colors */
+    background: linear-gradient(135deg, var(--void) 0%, var(--slate-deep) 50%, var(--slate-mid) 100%);
+    min-height: 100vh;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Updated scrollbar colors */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--void);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--coral);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--mint);
+  }
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+/* New gradient text with coral to mint */
+.gradient-text {
+  background: linear-gradient(135deg, var(--coral) 0%, var(--amber) 50%, var(--mint) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Updated glow effects */
+.glow-coral {
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+}
+
+.glow-mint {
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.4);
+}
+
+.glow-amber {
+  box-shadow: 0 0 20px rgba(255, 171, 76, 0.4);
+}
+
+/* Updated neon pulse animation */
+@keyframes neon-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 5px var(--coral), 0 0 10px var(--coral), 0 0 20px var(--coral);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--mint), 0 0 20px var(--mint), 0 0 40px var(--mint);
+  }
+}
+
+.neon-border {
+  animation: neon-pulse 3s ease-in-out infinite;
+}
+
+/* Updated typing cursor color */
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.typing-cursor::after {
+  content: "|";
+  animation: blink 1s step-end infinite;
+  color: var(--coral);
+}
+
+/* Float animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Gradient animation */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 5s ease infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-scroll-reverse {
+  animation: scroll-reverse 30s linear infinite;
+}
+
+.animate-scroll:hover,
+.animate-scroll-reverse:hover {
+  animation-play-state: paused;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+/* Adding playful animation keyframes for humor */
+
+/* Wiggle animation for playful hover effects */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+/* Bounce with rotation for extra personality */
+@keyframes bounce-spin {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(10deg);
+  }
+}
+
+.animate-bounce-spin {
+  animation: bounce-spin 0.6s ease-in-out;
+}
+
+/* Jello effect for squishy feedback */
+@keyframes jello {
+  0%,
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+
+.animate-jello {
+  animation: jello 0.9s both;
+}
+
+/* Rainbow shimmer for easter eggs */
+@keyframes rainbow-shimmer {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.animate-rainbow {
+  animation: rainbow-shimmer 3s linear infinite;
+}
+
+/* Rubber band effect */
+@keyframes rubber-band {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.25, 0.75);
+  }
+  40% {
+    transform: scale(0.75, 1.25);
+  }
+  50% {
+    transform: scale(1.15, 0.85);
+  }
+  65% {
+    transform: scale(0.95, 1.05);
+  }
+  75% {
+    transform: scale(1.05, 0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hover-rubber:hover {
+  animation: rubber-band 0.5s ease;
+}
+
+/* Shake animation for error states or fun interactions */
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Pop animation for click feedback */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-pop {
+  animation: pop 0.3s ease;
+}
+
+/* Spin with wobble */
+@keyframes spin-wobble {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  25% {
+    transform: rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(270deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.hover-spin-wobble:hover {
+  animation: spin-wobble 0.8s ease-in-out;
+}
+
+/* Confetti burst for success states */
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.confetti {
+  animation: confetti-fall 3s ease-in forwards;
+}
