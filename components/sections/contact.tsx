@@ -327,7 +327,7 @@ ${formData.message}
                       href="https://wa.me/916388365386"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-white hover:text-[#25D366] transition-colors"
+                      className="text-white hover:text-[#25D366] transition-colors select-text"
                     >
                       +91 6388365386
                     </a>
@@ -342,7 +342,7 @@ ${formData.message}
                     <p className="text-[#71717A] text-sm">Email us at</p>
                     <a
                       href="mailto:hello@thecompiled.com"
-                      className="text-white hover:text-[#FF6B6B] transition-colors"
+                      className="text-white hover:text-[#FF6B6B] transition-colors select-text"
                     >
                       hello@thecompiled.com
                     </a>

@@ -115,6 +115,20 @@
     /* New gradient background with rich slate colors */
     background: linear-gradient(135deg, var(--void) 0%, var(--slate-deep) 50%, var(--slate-mid) 100%);
     min-height: 100vh;
+    /* Disable text selection globally */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  /* Re-enable text selection for inputs and textareas */
+  input,
+  textarea {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
   }
 
   html {
