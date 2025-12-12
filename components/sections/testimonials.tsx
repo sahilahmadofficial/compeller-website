@@ -6,32 +6,32 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "Founder, TechStart",
-    avatar: "/professional-woman-headshot.png",
+    name: "Arjun Sharma",
+    role: "Computer Science Student, IIT Delhi",
+    avatar: "/indian-student-headshot.jpg",
     rating: 5,
-    text: "The Compiled transformed our vision into a stunning reality. Their attention to detail and technical expertise exceeded all expectations. Our platform now serves thousands of users seamlessly.",
+    text: "The Compiled provided exceptional guidance for my final year project. They patiently explained complex concepts and helped me build a machine learning application that impressed my professors. Their mentorship was invaluable!",
   },
   {
-    name: "Marcus Johnson",
-    role: "CS Student, Stanford",
-    avatar: "/male-student-headshot.png",
+    name: "Priya Menon",
+    role: "Principal, Wisdom Public School",
+    avatar: "/indian-woman-professional-headshot.jpg",
     rating: 5,
-    text: "As a student, I was overwhelmed by my capstone project. The Compiled's mentorship was invaluable. They helped me build something I'm truly proud of and taught me so much along the way.",
+    text: "They created a beautiful landing page for our school that perfectly captures our values and mission. Parents love the modern design, and inquiries have increased by 60%. Highly professional and understanding of our educational needs.",
   },
   {
-    name: "Emily Rodriguez",
-    role: "CEO, GreenLeaf Solutions",
-    avatar: "/professional-businesswoman-headshot.png",
+    name: "Rajesh Kumar",
+    role: "Owner, Chai & Coffee Corner",
+    avatar: "/indian-businessman-headshot.jpg",
     rating: 5,
-    text: "Working with The Compiled was a game-changer. They delivered our e-commerce platform ahead of schedule and the results speak for themselves - 300% increase in conversions!",
+    text: "The Compiled built an amazing website for my coffee shop with online ordering features. The design reflects our cozy atmosphere perfectly, and online orders have tripled! They truly understood my vision and delivered beyond expectations.",
   },
   {
-    name: "David Kim",
-    role: "Product Manager, InnovateCo",
-    avatar: "/asian-man-professional-headshot.png",
+    name: "Sneha Patel",
+    role: "Operations Manager, TechFlow Solutions",
+    avatar: "/indian-woman-manager-headshot.jpg",
     rating: 5,
-    text: "Exceptional team with exceptional results. The Compiled understood our complex requirements and built a solution that perfectly aligned with our business goals. Highly recommended!",
+    text: "They developed a custom automation tool that streamlined our entire workflow. What used to take hours now takes minutes. The tool is intuitive, powerful, and has saved us countless hours. Absolute game-changer for our business!",
   },
 ]
 
