@@ -77,8 +77,8 @@ export function Navigation() {
                 <Image
                   src="/logo.png"
                   alt="The Compiled Logo"
-                  width={120}
-                  height={30}
+                  width={108}
+                  height={27}
                   className={`transition-all duration-300 group-hover:scale-105 ${logoClicks >= 5 ? "animate-rainbow" : ""}`}
                 />
                 <div className="absolute inset-0 bg-[#FF6B6B]/10 blur-xl group-hover:bg-[#4ECDC4]/10 transition-colors duration-300" />
