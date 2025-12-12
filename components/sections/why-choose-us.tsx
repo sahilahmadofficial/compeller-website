@@ -90,13 +90,13 @@ export function WhyChooseUsSection() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div className="group">
                 <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">
-                  50+
+                  10+
                 </div>
                 <p className="text-[#71717A]">Projects Delivered</p>
               </div>
               <div className="group">
                 <div className="text-4xl md:text-5xl font-bold gradient-text mb-2 group-hover:scale-110 transition-transform duration-300">
-                  30+
+                  5+
                 </div>
                 <p className="text-[#71717A]">Happy Clients</p>
               </div>
