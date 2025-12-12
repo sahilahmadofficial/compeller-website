@@ -20,6 +20,7 @@ const services = [
   "Tech Consulting",
   "Project Guidance",
   "Maintenance & Support",
+  "Other",
 ]
 
 const loadingMessages = [
