@@ -3,7 +3,8 @@
 import type React from "react"
 
 import { useState } from "react"
-import { Code2, Github, Linkedin, Twitter, Heart, Coffee, CheckCircle } from "lucide-react"
+import { Github, Linkedin, Twitter, Heart, Coffee, CheckCircle } from "lucide-react"
+import Image from "next/image"
 
 const footerLinks = {
   services: [
@@ -55,14 +56,19 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Brand Column - Updated colors */}
+          {/* Brand Column */}
           <div className="lg:col-span-1">
-            <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="flex items-center gap-2 mb-6 group">
+            <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="inline-block mb-6 group">
               <div className="relative">
-                <Code2 className="w-8 h-8 text-[#FF6B6B] group-hover:text-[#4ECDC4] transition-colors duration-300" />
+                <Image
+                  src="/logo.png"
+                  alt="The Compiled"
+                  width={108}
+                  height={27}
+                  className="transition-all duration-300 group-hover:scale-105"
+                />
                 <div className="absolute inset-0 bg-[#FF6B6B]/20 blur-lg group-hover:bg-[#4ECDC4]/20 transition-colors duration-300" />
               </div>
-              <span className="text-xl font-bold gradient-text">The Compiled</span>
             </a>
             <p className="text-[#71717A] mb-6 leading-relaxed">
               We're a passionate tech consultancy dedicated to bringing innovative ideas to life. Transform your vision
@@ -84,7 +90,7 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Services Column - Updated hover colors */}
+          {/* Services Column */}
           <div>
             <h4 className="text-white font-bold mb-6">Services</h4>
             <ul className="space-y-3">
@@ -103,7 +109,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company Column - Updated hover colors */}
+          {/* Company Column */}
           <div>
             <h4 className="text-white font-bold mb-6">Company</h4>
             <ul className="space-y-3">
@@ -122,7 +128,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter Column - Updated colors */}
+          {/* Newsletter Column */}
           <div>
             <h4 className="text-white font-bold mb-6">Stay Updated</h4>
             <p className="text-[#71717A] mb-4 text-sm">
