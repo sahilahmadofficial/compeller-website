@@ -341,10 +341,10 @@ ${formData.message}
                   <div>
                     <p className="text-[#71717A] text-sm">Email us at</p>
                     <a
-                      href="mailto:hello@compeller.com"
+                      href="mailto:hello@compeller.in"
                       className="text-white hover:text-[#FF6B6B] transition-colors select-text"
                     >
-                      hello@compeller.com
+                      hello@compeller.in
                     </a>
                   </div>
                 </div>
