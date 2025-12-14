@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { ArrowDown, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const taglines = [
   "Compelling Digital Solutions.",
@@ -99,14 +100,31 @@ export function HeroSection() {
         </button>
 
         {/* Main Heading */}
-        <h1
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in"
+        <div
+          className="mb-6 animate-fade-in flex justify-center"
           style={{ animationDelay: "0.2s" }}
         >
-          <span className="gradient-text animate-gradient bg-gradient-to-r from-[#FF6B6B] via-[#FFAB4C] to-[#4ECDC4] hover:animate-jello inline-block cursor-default">
-            Compeller
-          </span>
-        </h1>
+          <div className="relative inline-block hover:animate-jello cursor-default group">
+            <Image
+              src="/logo.png"
+              alt="Compeller"
+              width={480}
+              height={120}
+              className="
+        w-full
+        max-w-[260px]
+        sm:max-w-[320px]
+        md:max-w-[400px]
+        lg:max-w-[480px]
+        h-auto
+      "
+              priority
+            />
+            {/* Very subtle glow effect */}
+            <div className="absolute inset-0 bg-[#FF6B6B]/5 blur-sm group-hover:bg-[#4ECDC4]/5 transition-colors duration-300" />
+          </div>
+        </div>
+
 
         <div className="h-12 mb-6 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <p className="text-2xl sm:text-3xl md:text-4xl font-mono text-[#E4E4E7]">
