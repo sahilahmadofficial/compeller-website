@@ -114,7 +114,7 @@ export function ContactSection() {
 
     const whatsappNumber = "916388365386" // +91 6388365386 without + and spaces
     const message = `
-*New Project Inquiry from The Compiled*
+*New Project Inquiry from Compeller*
 
 *Name:* ${formData.name}
 *Email:* ${formData.email}
@@ -341,10 +341,10 @@ ${formData.message}
                   <div>
                     <p className="text-[#71717A] text-sm">Email us at</p>
                     <a
-                      href="mailto:hello@thecompiled.com"
+                      href="mailto:hello@compeller.com"
                       className="text-white hover:text-[#FF6B6B] transition-colors select-text"
                     >
-                      hello@thecompiled.com
+                      hello@compeller.com
                     </a>
                   </div>
                 </div>

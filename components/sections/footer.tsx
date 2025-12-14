@@ -62,7 +62,7 @@ export function Footer() {
               <div className="relative">
                 <Image
                   src="/logo.png"
-                  alt="The Compiled"
+                  alt="Compeller"
                   width={108}
                   height={27}
                   className="transition-all duration-300 group-hover:scale-105"
@@ -164,7 +164,7 @@ export function Footer() {
         <div className="pt-8 border-t border-[#27272A]/50">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[#71717A] text-sm">
-              &copy; {new Date().getFullYear()} The Compiled. All rights reserved.
+              &copy; {new Date().getFullYear()} Compeller. All rights reserved.
             </p>
             <p className="text-[#71717A] text-sm flex items-center gap-1">
               Built with <Heart className="w-4 h-4 text-[#FF6B6B] fill-[#FF6B6B] inline" /> and lots of{" "}

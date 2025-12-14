@@ -1,4 +1,4 @@
-# The Compiled - Tech Consultancy Website
+# Compeller - Tech Consultancy Website
 
 A futuristic, cyberpunk-inspired tech consultancy website built with Next.js 15, React 19, and Tailwind CSS v4.
 

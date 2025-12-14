@@ -76,7 +76,7 @@ export function Navigation() {
               <div className="relative">
                 <Image
                   src="/logo.png"
-                  alt="The Compiled Logo"
+                  alt="Compeller Logo"
                   width={108}
                   height={27}
                   className={`transition-all duration-300 group-hover:scale-105 ${logoClicks >= 5 ? "animate-rainbow" : ""}`}

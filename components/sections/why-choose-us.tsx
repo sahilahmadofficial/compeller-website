@@ -51,7 +51,7 @@ export function WhyChooseUsSection() {
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-4">
               <span className="text-white">Why </span>
-              <span className="gradient-text">The Compiled?</span>
+              <span className="gradient-text">Compeller?</span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-[#FF6B6B] to-[#4ECDC4] mx-auto rounded-full" />
             <p className="text-[#71717A] mt-6 max-w-2xl mx-auto text-lg">

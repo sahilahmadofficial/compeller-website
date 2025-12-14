@@ -10,7 +10,7 @@ const testimonials = [
     role: "Computer Science Student, IIT Delhi",
     avatar: "/indian-student-headshot.jpg",
     rating: 5,
-    text: "The Compiled provided exceptional guidance for my final year project. They patiently explained complex concepts and helped me build a machine learning application that impressed my professors. Their mentorship was invaluable!",
+    text: "Compeller provided exceptional guidance for my final year project. They patiently explained complex concepts and helped me build a machine learning application that impressed my professors. Their mentorship was invaluable!",
   },
   {
     name: "Priya Menon",
@@ -24,7 +24,7 @@ const testimonials = [
     role: "Owner, Chai & Coffee Corner",
     avatar: "/indian-businessman-headshot.jpg",
     rating: 5,
-    text: "The Compiled built an amazing website for my coffee shop with online ordering features. The design reflects our cozy atmosphere perfectly, and online orders have tripled! They truly understood my vision and delivered beyond expectations.",
+    text: "Compeller built an amazing website for my coffee shop with online ordering features. The design reflects our cozy atmosphere perfectly, and online orders have tripled! They truly understood my vision and delivered beyond expectations.",
   },
   {
     name: "Sneha Patel",

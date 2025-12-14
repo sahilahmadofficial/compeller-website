@@ -5,7 +5,7 @@ import { ArrowDown, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const taglines = [
-  "Where Ideas Get Compiled.",
+  "Compelling Technology Solutions.",
   "No Bugs, Just Features.",
   "Ctrl+S Your Vision.",
   "git commit -m 'success'",
@@ -104,7 +104,7 @@ export function HeroSection() {
           style={{ animationDelay: "0.2s" }}
         >
           <span className="gradient-text animate-gradient bg-gradient-to-r from-[#FF6B6B] via-[#FFAB4C] to-[#4ECDC4] hover:animate-jello inline-block cursor-default">
-            The Compiled
+            Compeller
           </span>
         </h1>
 

@@ -15,20 +15,20 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "The Compiled | Where Ideas Get Compiled",
+  title: "Compeller | Futuristic Tech Consultancy",
   description:
     "Transform your vision into reality with cutting-edge technology solutions. We compile ideas into exceptional digital experiences.",
   keywords: ["tech consultancy", "web development", "mobile apps", "full-stack", "startup", "student projects"],
-  authors: [{ name: "The Compiled" }],
+  authors: [{ name: "Compeller" }],
   openGraph: {
-    title: "The Compiled | Where Ideas Get Compiled",
+    title: "Compeller | Futuristic Tech Consultancy",
     description: "Transform your vision into reality with cutting-edge technology solutions.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Compiled | Where Ideas Get Compiled",
+    title: "Compeller | Futuristic Tech Consultancy",
     description: "Transform your vision into reality with cutting-edge technology solutions.",
   },
     generator: 'v0.app'
