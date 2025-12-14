@@ -63,8 +63,8 @@ export function Footer() {
                 <Image
                   src="/logo.png"
                   alt="Compeller"
-                  width={108}
-                  height={27}
+                  width={120}
+                  height={30}
                   className="transition-all duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-[#FF6B6B]/20 blur-lg group-hover:bg-[#4ECDC4]/20 transition-colors duration-300" />
