@@ -5,7 +5,7 @@ import { ArrowDown, Sparkles } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const taglines = [
-  "Compelling Technology Solutions.",
+  "Compelling Digital Solutions.",
   "No Bugs, Just Features.",
   "Ctrl+S Your Vision.",
   "git commit -m 'success'",
