@@ -9,7 +9,7 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 const socialLinks = [
   { name: "GitHub", icon: Github, href: "https://github.com" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/company/compeller-tech" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com" },
 ]
 
