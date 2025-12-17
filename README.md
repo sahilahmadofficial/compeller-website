@@ -18,9 +18,23 @@ A futuristic, cyberpunk-inspired tech consultancy website built with Next.js 15,
 - Tech stack marquee with infinite scroll
 - Process timeline (horizontal/vertical responsive)
 - Why Choose Us with animated stats
+- Team section introducing the founders and their expertise
 - Client testimonials carousel
 - Contact form with WhatsApp integration
 - Footer with newsletter signup
+
+## Color Theme
+
+The website uses a unique warm-to-cool color palette that sets it apart from typical tech sites:
+
+- **Primary (Coral):** #FF6B6B - Warm, energetic accent for CTAs and highlights
+- **Secondary (Mint/Teal):** #4ECDC4 - Cool contrast for balance and visual interest
+- **Accent (Amber):** #FFAB4C - Adds warmth to gradients and hover states
+- **Background (Dark Slate):** #0A0A0F - Rich, sophisticated dark mode base
+- **Surface (Darker Slate):** #0F0F14 - Card and elevated element backgrounds
+- **Muted:** #9CA3AF - Secondary text and borders
+
+This coral-to-mint gradient combination creates a memorable, approachable yet futuristic aesthetic.
 
 ## Tech Stack
 
@@ -63,6 +77,7 @@ npm start
 │       ├── tech-stack.tsx
 │       ├── process.tsx
 │       ├── why-choose-us.tsx
+│       ├── team.tsx        # Team section introducing the founders and their expertise
 │       ├── testimonials.tsx
 │       ├── contact.tsx
 │       └── footer.tsx
