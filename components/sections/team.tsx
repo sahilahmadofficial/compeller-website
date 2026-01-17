@@ -7,7 +7,7 @@ import Image from "next/image"
 const founders = [
     {
         name: "Sahil Ahmad",
-        role: "Founder & Backend Engineer",
+        role: "Co-Founder & Backend Engineer",
         image: "/sahil-ahmad.jpeg",
         bio: "Backend engineer obsessed with building systems that scale. Breaks things to understand them, then builds them to last. Dark terminal enthusiast who turns complex problems into elegant solutions.",
         expertise: ["Python", "Django", "FastAPI", "System Design", "PostgreSQL", "Redis"],
