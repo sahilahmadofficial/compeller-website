@@ -75,7 +75,7 @@ export function Navigation() {
             >
               <div className="relative">
                 <Image
-                  src="/logo.png"
+                  src="/logo.avif"
                   alt="Compeller Logo"
                   width={120}
                   height={30}

@@ -8,14 +8,14 @@ const founders = [
     {
         name: "Sahil Ahmad",
         role: "Co-Founder & Backend Engineer",
-        image: "/sahil-ahmad.jpeg",
+        image: "/sahil-ahmad.avif",
         bio: "Backend engineer obsessed with building systems that scale. Breaks things to understand them, then builds them to last. Dark terminal enthusiast who turns complex problems into elegant solutions.",
         expertise: ["Python", "Django", "FastAPI", "System Design", "PostgreSQL", "Redis"],
     },
     {
         name: "Mohammad Kaif",
         role: "Co-Founder & Solution Architect",
-        image: "/mohammad-kaif.jpeg",
+        image: "/mohammad-kaif.avif",
         bio: "Solution architect who bridges the gap between business needs and technical reality. Designs scalable architectures and guides teams to turn ambitious visions into production-ready solutions.",
         expertise: ["Architecture Design", "Full-Stack", "Cloud Infrastructure", "DevOps", "API Design", "Team Leadership"],
     },

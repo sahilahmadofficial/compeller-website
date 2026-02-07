@@ -61,7 +61,7 @@ export function Footer() {
             <a href="#home" onClick={(e) => handleLinkClick(e, "#home")} className="inline-block mb-6 group">
               <div className="relative">
                 <Image
-                  src="/logo.png"
+                  src="/logo.avif"
                   alt="Compeller"
                   width={120}
                   height={30}

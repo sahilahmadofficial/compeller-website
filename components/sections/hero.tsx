@@ -106,7 +106,7 @@ export function HeroSection() {
         >
           <div className="relative inline-block hover:animate-jello cursor-default group">
             <Image
-              src="/logo.png"
+              src="/logo.avif"
               alt="Compeller"
               width={480}
               height={120}

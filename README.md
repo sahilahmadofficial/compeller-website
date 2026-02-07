@@ -82,7 +82,7 @@ npm start
 │       ├── contact.tsx
 │       └── footer.tsx
 └── public/
-    └── logo.png
+    └── logo.avif
 ```
 
 ## Easter Eggs
